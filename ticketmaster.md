@@ -161,13 +161,13 @@ Here are a few observations about the data we are going to store:
 3. Each Movie will have many Shows and each Show will have multiple Bookings.
 4. A user can have multiple bookings.
 
-![](../img/ticketmaster-1.png)
+![](/img/ticketmaster-1.png)
 
 ## 7. High Level Design
 
 At a high-level, our web servers will manage users’ sessions and application servers will handle all the ticket management, storing data in the databases as well as working with the cache servers to process reservations.
 
-![](../img/ticketmaster-2.png)
+![](/img/ticketmaster-2.png)
 
 ## 8. Detailed Component Design
 
@@ -195,49 +195,49 @@ First, let’s try to build our service assuming it is being served from a singl
 <details>
   <summary>Phase 1</summary>
   
-![](../img/ticketmaster-3.png)
+![](/img/ticketmaster-3.png)
 
 </details>
 <details>
   <summary>Phase 2</summary>
   
-![](../img/ticketmaster-4.png)
+![](/img/ticketmaster-4.png)
   
 </details>
 <details>
   <summary>Phase 3</summary>
   
-![](../img/ticketmaster-5.png)
+![](/img/ticketmaster-5.png)
 
 </details>
 <details>
   <summary>Phase 4</summary>
   
-![](../img/ticketmaster-6.png)
+![](/img/ticketmaster-6.png)
 
 </details>
 <details>
   <summary>Phase 5</summary>
   
-![](../img/ticketmaster-7.png)
+![](/img/ticketmaster-7.png)
 
 </details>
 <details>
   <summary>Phase 6</summary>
   
-![](../img/ticketmaster-8.png)
+![](/img/ticketmaster-8.png)
 
 </details>
 <details>
   <summary>Phase 7</summary>
   
-![](../img/ticketmaster-9.png)
+![](/img/ticketmaster-9.png)
 
 </details>
 <details>
   <summary>Phase 8</summary>
   
-![](../img/ticketmaster-10.png)
+![](/img/ticketmaster-10.png)
 
 </details>
 
@@ -254,7 +254,7 @@ In the database, we will store the reservation in the ‘Booking’ table and th
 
 ActiveReservationsService will also work with the external financial service to process user payments. Whenever a booking is completed, or a reservation gets expired, WaitingUsersService will get a signal so that any waiting customer can be served.
 
-![](../img/ticketmaster-11.png)
+![](/img/ticketmaster-11.png)
 
 ### <div align="center">ActiveReservationsService keeping track of all active reservations</div>
 
